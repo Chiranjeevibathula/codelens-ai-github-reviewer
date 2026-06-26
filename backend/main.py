@@ -190,8 +190,15 @@ def fetch_repo(owner, repo, mode="fast"):
     repo_res = github_get(f"https://api.github.com/repos/{owner}/{repo}")
 
     if repo_res.status_code != 200:
-        raise HTTPException(status_code=404, detail="Repository not found or GitHub API limit reached")
-
+    raise HTTPException(
+        status_code=repo_res.status_code,
+        detail={
+            "message": "GitHub API error",
+            "github_status": repo_res.status_code,
+            "github_response": repo_res.text,
+            "requested_url": f"https://api.github.com/repos/{owner}/{repo}"
+        }
+    )
     repo_data = repo_res.json()
     branch = repo_data.get("default_branch", "main")
 
