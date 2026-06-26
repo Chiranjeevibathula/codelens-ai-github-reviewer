@@ -199,6 +199,7 @@ def fetch_repo(owner, repo, mode="fast"):
             "requested_url": f"https://api.github.com/repos/{owner}/{repo}"
         }
     )
+    
     repo_data = repo_res.json()
     branch = repo_data.get("default_branch", "main")
 
