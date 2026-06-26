@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 import jsPDF from "jspdf";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://codelens-ai-backend-rvlm.onrender.com";
 
 function ScoreCard({ title, score }) {
   const safeScore = Number(score || 0);
