@@ -1,197 +1,178 @@
 # 🚀 CodeLens AI
 
-::: {align="center"}
-### **AI-Powered GitHub Repository Engineering Auditor**
+> AI-Powered GitHub Repository Engineering Auditor
 
-Analyze • Compare • Improve GitHub Repositories with AI
+CodeLens AI is an AI-powered web application that analyzes public GitHub repositories and generates detailed software engineering insights using **OpenAI GPT** and the **GitHub REST API**.
 
-```{=html}
-<p>
-```
-`<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>`{=html}
-`<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>`{=html}
-`<img src="https://img.shields.io/badge/OpenAI-GPT--4o-412991?style=for-the-badge&logo=openai&logoColor=white"/>`{=html}
-`<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>`{=html}
-`<img src="https://img.shields.io/badge/GitHub-API-181717?style=for-the-badge&logo=github"/>`{=html}
-`<img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge"/>`{=html}
-```{=html}
-</p>
-```
-**CodeLens AI** analyzes public GitHub repositories using AI to evaluate
-architecture, security, performance, maintainability, documentation,
-engineering quality, and recruiter readiness.
-:::
+It evaluates repository architecture, security, performance, documentation, maintainability, and recruiter readiness through an interactive dashboard.
 
-------------------------------------------------------------------------
+---
 
 ## ✨ Features
 
--   🤖 AI-powered repository analysis
--   🏗️ Architecture review
--   🛡️ Security assessment
--   ⚡ Performance insights
--   📚 Documentation evaluation
--   🧹 Maintainability analysis
--   💼 Recruiter readiness score
--   📊 Engineering scorecards
--   ✅ Engineering checklist detection
--   🔧 AI fix suggestions
--   ⚔️ Repository comparison
--   📄 TXT & PDF report export
--   🚀 Fast Mode & Deep Mode
+- 🤖 AI-powered GitHub repository analysis
+- 📊 Overall engineering score
+- 🏗️ Architecture review
+- 🔒 Security analysis
+- ⚡ Performance recommendations
+- 🧹 Maintainability evaluation
+- 📚 Documentation review
+- 💼 Recruiter readiness score
+- ✅ Engineering checklist detection
+- 🔧 AI-generated fix suggestions
+- ⚔️ Compare two GitHub repositories
+- 📄 Download reports in TXT and PDF
 
-------------------------------------------------------------------------
+---
 
-## 📊 What CodeLens AI Analyzes
+## 🛠️ Tech Stack
 
-  Category          Description
-  ----------------- ----------------------------
-  Architecture      Project structure & design
-  Security          Engineering best practices
-  Performance       Optimization opportunities
-  Documentation     README & setup quality
-  Maintainability   Long-term code quality
-  Recruiter Score   Portfolio readiness
-  Technical Debt    Engineering maturity
+### Frontend
+- React.js
+- Axios
+- CSS3
 
-------------------------------------------------------------------------
+### Backend
+- FastAPI
+- Python
 
-## 🛠 Tech Stack
+### AI
+- OpenAI GPT-4o Mini
 
-  Layer      Technologies
-  ---------- -------------------
-  Frontend   React, Axios, CSS
-  Backend    FastAPI, Python
-  AI         OpenAI GPT
-  APIs       GitHub REST API
-  Reports    TXT, PDF
+### APIs
+- GitHub REST API
 
-------------------------------------------------------------------------
+---
 
-## 🏗️ Architecture
+## 🏗️ Project Architecture
 
-``` text
+```text
 GitHub Repository
         │
         ▼
  GitHub REST API
         │
         ▼
- Repository Parser
+ Repository Analysis
         │
         ▼
- AI Review Engine
+ OpenAI Review Engine
         │
         ▼
- Structured Report
+ Interactive Dashboard
         │
-        ▼
- React Dashboard
+        ├── TXT Report
+        └── PDF Report
 ```
 
-------------------------------------------------------------------------
+---
 
-## 🚀 Quick Start
+## 🚀 Installation
 
-### Clone
+### Clone Repository
 
-``` bash
+```bash
 git clone https://github.com/Chiranjeevibathula/codelens-ai-github-reviewer.git
 cd codelens-ai-github-reviewer
 ```
 
 ### Backend
 
-``` bash
+```bash
 cd backend
+
 python3 -m venv venv
+
 source venv/bin/activate
+
 pip install -r requirements.txt
+
 uvicorn main:app --reload
 ```
 
 ### Frontend
 
-``` bash
+```bash
 cd frontend
+
 npm install
+
 npm run dev
 ```
 
-### Environment
+---
 
-Create `backend/.env`
+## 🔑 Environment Variables
 
-``` env
+Create a `.env` file inside the `backend` folder.
+
+```env
 OPENAI_API_KEY=your_openai_api_key
 GITHUB_TOKEN=your_github_token
 ```
 
-------------------------------------------------------------------------
+---
 
-## 📡 API
+## 📡 API Endpoints
 
-  Method   Endpoint     Description
-  -------- ------------ ----------------------
-  GET      `/`          Health Check
-  POST     `/review`    Analyze Repository
-  POST     `/compare`   Compare Repositories
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/` | Backend Health Check |
+| POST | `/review` | Analyze Repository |
+| POST | `/compare` | Compare Two Repositories |
 
-------------------------------------------------------------------------
+---
 
 ## 🎯 Use Cases
 
--   Improve GitHub portfolios
--   Audit open-source projects
--   Compare repositories
--   Prepare for interviews
--   Evaluate engineering quality
--   Learn software architecture
+- Improve GitHub projects
+- Review portfolio repositories
+- Compare repositories
+- Learn software engineering best practices
+- Prepare projects for interviews
+- Audit open-source repositories
 
-------------------------------------------------------------------------
+---
 
-## 🛣️ Roadmap
+## 🚀 Future Improvements
 
--   AI Architecture Diagrams
--   Pull Request Review
--   Commit History Analysis
--   Code Smell Detection
--   GitHub App
--   CI/CD Integration
+- AI-generated architecture diagrams
+- Pull request review
+- Commit history analysis
+- Code smell detection
+- GitHub App integration
+- CI/CD analysis
 
-------------------------------------------------------------------------
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome!
+Contributions are welcome.
 
-1.  Fork the repository
-2.  Create a branch
-3.  Commit your changes
-4.  Open a Pull Request
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
 
-------------------------------------------------------------------------
+---
 
 ## 📄 License
 
-Licensed under the MIT License.
+This project is licensed under the MIT License.
 
-------------------------------------------------------------------------
+---
 
 ## 👨‍💻 Author
 
 **Bathula Chiranjeevi**
 
-AI Automation & GenAI Developer \| Full-Stack Developer
+AI Automation & GenAI Developer | Full-Stack Developer
 
--   🌐 Portfolio: https://chirubathula06.github.io/my-portfolio/
--   💼 LinkedIn: https://www.linkedin.com/in/bathula-chiranjeevi/
--   💻 GitHub: https://github.com/Chiranjeevibathula
+- 🌐 Portfolio: https://chirubathula06.github.io/my-portfolio/
+- 💼 LinkedIn: https://www.linkedin.com/in/bathula-chiranjeevi/
+- 💻 GitHub: https://github.com/Chiranjeevibathula
 
-------------------------------------------------------------------------
+---
 
-::: {align="center"}
-### ⭐ If you found this project useful, please consider giving it a Star!
-
-**Built with ❤️ using React, FastAPI, OpenAI & GitHub API**
-:::
+⭐ **If you found this project useful, consider giving it a star!**
