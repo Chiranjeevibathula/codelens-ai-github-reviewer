@@ -190,7 +190,7 @@ def fetch_repo(owner, repo, mode="fast"):
     repo_res = github_get(f"https://api.github.com/repos/{owner}/{repo}")
 
     if repo_res.status_code != 200:
-    raise HTTPException(
+        raise HTTPException(
         status_code=repo_res.status_code,
         detail={
             "message": "GitHub API error",
